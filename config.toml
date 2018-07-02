@@ -1,5 +1,5 @@
 # Site settings
-baseURL = "http://yimin.io"
+baseURL = "https://yimin.io"
 languageCode = "en-US"
 title = "Yimin Wu"
 theme = "hugo-split-theme"
