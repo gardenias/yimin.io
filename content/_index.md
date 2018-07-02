@@ -1,6 +1,6 @@
 +++
 title = "Yimin, Wu"
-tagline = "Enginer. China. Beijing"
+tagline = "Engineer. China. Beijing"
 +++
 
 > Ordinary steps can also take a great trip.
