@@ -1,7 +1,7 @@
 # Site settings
-baseURL = "http://taskcreek.com"
+baseURL = "http://yimin.io"
 languageCode = "en-US"
-title = "Task Creek - Treat tasks like a creek!"
+title = "Yimin Wu"
 theme = "hugo-split-theme"
 disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap"]
 
@@ -9,24 +9,18 @@ disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap"]
 googleAnalytics = ""
 
 # Copyright
-copyright = "&copy;2018 Your Name"
+copyright = "&copy;2018 Yimin"
 
 [params]
 
   # Metadata for search engines and social sharing
-  author = "SkyDayDayBlue"
-  description = "Treat and manage your task as a creek, which is endless and no hurry!"
+  author = "yimin"
+  description = "My Profile Site"
   shareImage = "images/social.jpg"
   twitterHandle = "onepagelove"
 
   # Favicon
   favicon = "favicon.ico"
-
-  # Section - Content
-  [params.content]
-    name = "Sky Daydayblue"
-    tagline = "Engineer. China. Beijing."
-    bio = ""
 
   # Section - Visual
   [params.visual]
@@ -81,21 +75,21 @@ copyright = "&copy;2018 Your Name"
       #  url = "#"
 
   # Links List #3
-#  [[params.links]]
-#    [params.links.list3]
-#      heading = "Network"
-#
-#      [[params.links.list3.link]]
-#        text = "Link One"
-#        url = "#"
-#
-#      [[params.links.list3.link]]
-#        text = "Link Two"
-#        url = "#"
-#
-#      [[params.links.list3.link]]
-#        text = "Link Three"
-#        url = "#"
+  # [[params.links]]
+  #  [params.links.list3]
+  #    heading = "Network"
+
+  #    [[params.links.list3.link]]
+  #      text = "Link One"
+  #      url = "#"
+
+  #    [[params.links.list3.link]]
+  #      text = "Link Two"
+  #      url = "#"
+
+  #    [[params.links.list3.link]]
+  #      text = "Link Three"
+  #      url = "#"
 
   # The original template is released under the Creative Commons Attribution 3.0 License.
   # Please keep the original attribution link when using for your own project.
