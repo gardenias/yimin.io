@@ -13,6 +13,7 @@ fi
 echo "Deleting old publication"
 rm -rf public
 mkdir public
+git worktree remove gh-pages
 git worktree prune
 rm -rf .git/worktrees/public/
 

@@ -20,7 +20,7 @@ copyright = "&copy;2018 Yimin"
   twitterHandle = "onepagelove"
 
   # Favicon
-  favicon = "favicon.ico"
+  favicon = "yimin.ico"
 
   # Section - Visual
   [params.visual]
@@ -28,7 +28,7 @@ copyright = "&copy;2018 Yimin"
     # Image
     [params.visual.image]
       enable = true
-      file = "https://s.yimg.com/uy/build/images/sohp/womens-month-mar-2018/aleahmichele_ifihadavoice.jpg"
+      file = "https://s.yimg.com/uy/build/images/sohp/womens-month-mar-2018/patriciaware_takingabow.jpg"
       position = "center center"
 
     # Video
