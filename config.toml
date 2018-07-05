@@ -55,7 +55,7 @@ copyright = "&copy;2018 Yimin"
 
       [[params.links.list1.link]]
         text = "Amazing-x"
-        url = "https://amazing-x.com"
+        url = "https://amzing-x.com"
 
   # Links List #2
   [[params.links]]
