@@ -3,13 +3,19 @@ baseURL = "https://yimin.io"
 languageCode = "en-US"
 title = "Yimin Wu"
 theme = "gardenias"
-disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap"]
 
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = ""
 
+paginate = "10"
+
 # Copyright
 copyright = "&copy;2018 Yimin"
+
+[Author] # Used in authorbox
+  name = "Yimin"
+  bio = "《深度工作》中指出：类似长途商务旅行、会议、回复邮件、参加公关活动等形式的工作，都应当被归纳为“浮浅工作”。"
+  avatar = "img/avatar.png"
 
 [params]
 
@@ -21,6 +27,21 @@ copyright = "&copy;2018 Yimin"
 
   # Favicon
   favicon = "yimin.ico"
+  subtitle = "Start my life" # Subtitle of your site. Used in site header
+  #description = "John Doe's Personal blog about everything" # Site description. Used in meta description
+  #copyright = "John Doe" # copyright holder, otherwise will use site title
+  opengraph = true # Enable OpenGraph if true
+  #twitter_cards = true # Enable Twitter Cards if true
+  readmore = true # Show "Read more" button in list if true
+  authorbox = false # Show authorbox at bottom of pages if true
+  toc = false # Enable Table of Contents
+  post_navigation = true # Show post navigation at bottom of pages if true
+  postSections = ["post"] # the section pages to show on home page and the "Recent articles" widget
+  #postSections = ["blog", "news"] # alternative that shows more than one section's pages
+  #dateformat = "2006-01-02" # change the format of dates
+  mathjax = true # Enable MathJax
+  mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" # Specify MathJax path
+  mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
 
   # Section - Visual
   [params.visual]
@@ -37,7 +58,28 @@ copyright = "&copy;2018 Yimin"
       mute = true
       file = "videos/background.mp4"
       # youtubeId = "dk9uNWPP7EA"
+  [params.sidebar]
+      home = "right" # Configure layout for home page
+      list = "left"  # Configure layout for list pages
+      single = false # Configure layout for single pages
+      # Enable widgets in given order
+      widgets = ["search", "recent", "categories", "taglist", "social"]
 
+  [params.widgets]
+      recent_num = 5 # Set the number of articles in the "Recent articles" widget
+      tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)
+
+  [params.widgets.social]
+      # Enable parts of social widget
+      #facebook = "gardenias"
+      #twitter = "username"
+      #linkedin = "username"
+      #telegram = "username"
+      github = "gardenias"
+      #gitlab = "username"
+      #email = "example@example.com"
+      #google_plus = "profileid"
+      
   # Links
   #
   # Links List #1
@@ -47,7 +89,7 @@ copyright = "&copy;2018 Yimin"
 
       [[params.links.list1.link]]
         text = "Blog"
-        url = "https://diveintoprogramming.com"
+        url = "/posts"
 
       [[params.links.list1.link]]
         text = "Streams"
