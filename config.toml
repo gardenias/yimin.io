@@ -2,7 +2,7 @@
 baseURL = "https://yimin.io"
 languageCode = "en-US"
 title = "Yimin Wu"
-theme = "hugo-split-theme"
+theme = "gardenias"
 disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap"]
 
 # Enter your tracking code to enable Google Analytics
@@ -74,24 +74,4 @@ copyright = "&copy;2018 Yimin"
        text = "TaskCreek"
        url = "https://taskcreek.com"
 
-  # Links List #3
-  # [[params.links]]
-  #  [params.links.list3]
-  #    heading = "Network"
 
-  #    [[params.links.list3.link]]
-  #      text = "Link One"
-  #      url = "#"
-
-  #    [[params.links.list3.link]]
-  #      text = "Link Two"
-  #      url = "#"
-
-  #    [[params.links.list3.link]]
-  #      text = "Link Three"
-  #      url = "#"
-
-  # The original template is released under the Creative Commons Attribution 3.0 License.
-  # Please keep the original attribution link when using for your own project.
-  # If you'd like to use the template without the attribution, you can check out
-  # the license option via the template author's website: https://onepagelove.com/split

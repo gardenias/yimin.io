@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="{{ default .Site.LanguageCode "en-US" }}">
+
+<head>
+  <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<!-- SEO -->
+<title>{{ if .IsPage }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
+{{ with .Site.Params.author }}<meta name="author" content="{{ . }}" />{{ end }}
+{{ with .Site.Params.description }}<meta name="description" content="{{ . }}" />{{ end }}
+<meta name="robots" content="index, follow" />
+<meta name="referrer" content="always" />
+
+<!-- Social & Open Graph -->
+<meta property="og:title" content="{{ if .IsPage }}{{ .Title }} - {{ end }}{{ .Site.Title }}" />
+{{ with .Site.Params.description }}<meta property="og:description" content="{{ . }}" />{{ end }}
+<meta property="og:url" content="{{ .Site.BaseURL }}" />
+{{ with .Site.Params.shareImage }}
+<meta property="og:image" content="{{ . | absURL }}" />
+<meta name="twitter:card" content="summary_large_image" />
+{{ end }}
+{{ with .Site.Params.twitterHandle }}<meta name="twitter:site" content="@{{ . }}" />{{ end }}
+
+<!-- Favicon -->
+{{ with .Site.Params.favicon }}<link rel="icon" href="{{ . | absURL }}" />{{ end }}
+
+<!-- Styles -->
+<link rel="stylesheet" href="{{ "assets/css/split.css" | absURL }}" type="text/css" media="screen" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+<!-- Image Styles -->
+{{ if .Site.Params.visual.image.enable }}
+  <style type="text/css">
+  {{ if .Site.Params.visual.image.file }}
+    .fs-split .split-image { background-image: url("{{ .Site.Params.visual.image.file | absURL }}"); background-position: {{ if .Site.Params.visual.image.position }}{{ .Site.Params.visual.image.position }}{{ else }}center center{{ end }}; }
+  {{ end }}
+  </style>
+{{ end }}
+
+<!-- Google Analytics -->
+{{ if and (.Site.GoogleAnalytics) (not (in (printf "%#v" .Site.BaseURL) "localhost")) }}
+  {{ template "_internal/google_analytics.html" . }}
+{{ end }}
+
+</head>
+
+<body id="fullsingle" class="page-template-page-fullsingle-split">
+
+  <div class="fs-split">
+
+    <!-- Image -->
+    {{ if .Site.Params.visual.image.enable }}
+
+      <div class="split-image">
+
+      </div>
+
+    <!-- Video -->
+    {{ else if .Site.Params.visual.video.enable }}
+
+    <div class="split-image split-video">
+
+      <!-- YouTube Video -->
+      {{ if .Site.Params.visual.video.youtubeId }}
+    
+        <div class="video-wrap">
+          <div class="video-container">
+            <iframe class="video-content" src="https://www.youtube.com/embed/{{ .Site.Params.visual.video.youtubeId }}?rel=0&amp;controls=0&amp;showinfo=0&amp;loop=1&amp;playlist={{ .Site.Params.visual.video.youtubeId }}&amp;autoplay=1{{ if .Site.Params.visual.video.mute }}&amp;mute=1{{ end }}" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+    
+      <!-- Self-Hosted Video -->
+      {{ else if .Site.Params.visual.video.file }}
+    
+        <video class="video" src="{{ .Site.Params.visual.video.file }}" loop autoplay{{ if .Site.Params.visual.video.mute }} muted{{ end }}></video>
+    
+      {{ end }}
+    
+    </div>
+    
+
+    {{ end }}
+
+    <!-- Content Side -->
+    <div class="split-content">
+      <div class="split-content-vertically-center">
+        <!-- Intro -->
+        <div class="split-intro">
+          {{ with .Title }}<h1>{{ . }}</h1>{{ end }}
+          {{ with .Params.tagline }}<span class="tagline">{{ . }}</span>{{ end }}
+        </div>
+        
+        <!-- Main -->
+         <!-- Bio -->
+         <div class="split-bio">
+          {{ .Content }}
+        </div>
+        
+
+        <!-- Links -->
+        <div class="split-lists">
+
+          {{ range $key, $value := .Site.Params.links }}
+            {{ range $key, $list := $value }}
+        
+            {{ if $list.link }}
+              <div class="split-list">
+                <h3>{{ $list.heading }}</h3>
+                <ul>
+                  {{ range $list.link }}
+                    <li><a href="{{ .url }}">{{ .text }}</a></li>
+                  {{ end }}
+                </ul>
+              </div>
+            {{ end }}
+        
+            {{ end }}
+          {{ end }}
+        
+        </div>
+        
+
+        <!-- Footer -->
+        
+        <div class="split-credit">
+          <p>{{ .Site.Copyright | safeHTML }} - <a href="https://onepagelove.com/split">Split Template</a> by <a href="https://onepagelove.com">One Page Love</a></p>
+        
+          {{ "<!--" | safeHTML }}
+          {{ "To edit this credit you can remove the CC3.0 license for only $5 here: https://onepagelove.com/split" | safeHTML }}
+          {{ "this really helps contribute towards us developing more templates and means the world to me!" | safeHTML }}
+          {{ "Cheers, Rob (@robhope)" | safeHTML }}
+          {{ "-->" | safeHTML }}
+        </div>
+        
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
