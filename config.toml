@@ -1,7 +1,7 @@
 # Site settings
 baseURL = "https://yimin.io"
 languageCode = "en-US"
-title = "Yimin Wu"
+title = "栀子花"
 theme = "gardenias"
 
 # Enter your tracking code to enable Google Analytics
@@ -13,27 +13,20 @@ paginate = "10"
 copyright = "&copy;2018 Yimin"
 
 [Author] # Used in authorbox
-  name = "Yimin"
-  bio = "《深度工作》中指出：类似长途商务旅行、会议、回复邮件、参加公关活动等形式的工作，都应当被归纳为“浮浅工作”。"
-  avatar = "images/avatar.png"
+  name = "yimin"
+  bio = "Ordinary steps can also take a great trip."
+  avatar = "favicon.ico"
 
 [params]
 
   # Metadata for search engines and social sharing
-  author = "yimin"
-  description = "My Profile Site"
-  shareImage = "images/social.jpg"
-  twitterHandle = "onepagelove"
-
+  description = "Ordinary steps can also take a great trip."
   # Favicon
-  favicon = "yimin.ico"
-  subtitle = "Start my life" # Subtitle of your site. Used in site header
-  #description = "John Doe's Personal blog about everything" # Site description. Used in meta description
-  #copyright = "John Doe" # copyright holder, otherwise will use site title
+  favicon = "favicon.ico"
   opengraph = true # Enable OpenGraph if true
   #twitter_cards = true # Enable Twitter Cards if true
   readmore = true # Show "Read more" button in list if true
-  authorbox = false # Show authorbox at bottom of pages if true
+  authorbox = true # Show authorbox at bottom of pages if true
   toc = false # Enable Table of Contents
   post_navigation = true # Show post navigation at bottom of pages if true
   postSections = ["post"] # the section pages to show on home page and the "Recent articles" widget
