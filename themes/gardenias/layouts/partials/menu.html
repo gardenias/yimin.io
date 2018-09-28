@@ -4,7 +4,7 @@
 		{{- $currentPage := . }}
 		{{- range .Site.Menus.main }}
 		{{- if .Name}}
-		<li class="menu__item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} menu__item--active{{end}}"><a class="menu__link" href="{{ .URL }}">{{ .Name | upper }}</a></li>
+		<li class="menu__item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} menu__item--active{{end}}"><a class="menu__link" href="{{ .URL }}">{{ .Name }}</a></li>
 		{{- end }}
 		{{- end }}
 	</ul>

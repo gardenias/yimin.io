@@ -14,17 +14,9 @@ copyright = "&copy;2018 Yimin"
 
 [menu]
   [[menu.main]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
-  [[menu.main]]
     identifier = "post"
     name = "Posts"
     url = "/post/"
-  [[menu.main]]
-    identifier = "about"
-    name = "Me"
-    url = "/me/"
 
 [Author] # Used in authorbox
   name = "yimin"

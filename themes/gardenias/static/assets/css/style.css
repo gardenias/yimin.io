@@ -436,7 +436,7 @@ select {
 	position: relative;
 	width: 100%;
 	margin: 0 auto;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	background: #2a2a2a;
 }
 

@@ -1,7 +1,10 @@
-+++
-title = "Yimin, Wu"
-tagline = "Engineer. China. Beijing"
-+++
+---
+title: "Yimin, Wu"
+tagline: "Engineer. China. Beijing"
+menu: 
+  main:
+    name: "Home"
+---
 
 > Ordinary steps can also take a great trip.
 >
