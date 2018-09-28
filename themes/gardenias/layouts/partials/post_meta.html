@@ -13,3 +13,6 @@
 	<span class="meta__text">{{ range $index, $category := .Params.categories }}{{ if gt $index 0 }}, {{ end }}<a class="meta__link" href="{{ "categories/" | relLangURL }}{{ . | urlize | lower }}" rel="category">{{ . }}</a>{{ end }}</span>
 </div>
 {{- end }}
+{{- if .GitInfo }}
+<!-- .GitInfo.AbbreviatedHash .GitInfo..AuthorName -->
+{{- end}}
