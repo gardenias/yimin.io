@@ -55,12 +55,12 @@ body {
 .container {
 	position: relative;
 	width: 100%;
-	max-width: 1080px;
+	max-width: 1228px;
 	margin: 0 auto;
 }
 
 .container--outer {
-	margin: 25px auto;
+	/* margin: 25px auto; */
 	box-shadow: 0 0 10px rgba(50, 50, 50, .17);
 }
 
@@ -400,7 +400,7 @@ select {
 
 .logo__link {
 	display: inline-block;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 }
 
 .logo__title {
@@ -418,6 +418,7 @@ select {
 	font-size: 14px;
 	font-size: .875rem;
 	font-weight: 700;
+	font-style: italic;
 	line-height: 1;
 	color: #e64946;
 	border-top: 1px solid #ebebeb;
@@ -435,7 +436,7 @@ select {
 	position: relative;
 	width: 100%;
 	margin: 0 auto;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	background: #2a2a2a;
 }
 
@@ -693,7 +694,7 @@ select {
 	float: left;
 	margin: 0 6px 6px 0;
 	margin: 0 .375rem .375rem 0;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	background: #2a2a2a;
 }
 
@@ -781,8 +782,8 @@ select {
 
 /* Author Box */
 .authorbox {
-	padding: 25px 0;
-	margin-bottom: 25px;
+	/* padding: 25px 0; */
+	/* margin-bottom: 25px; */
 	line-height: 1.5;
 	border-top: 1px solid #ebebeb;
 	border-bottom: 1px solid #ebebeb;
@@ -792,7 +793,7 @@ select {
 	float: left;
 	padding: 3px;
 	margin: 0 25px 0 0;
-	border: 1px solid #ebebeb;
+	/* border: 1px solid #ebebeb; */
 }
 
 .authorbox__header {
@@ -1079,7 +1080,7 @@ textarea {
 	display: inline-block;
 	margin: 0 4px 8px 0;
 	font-size: 12px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 }
 
 /* Footer */
