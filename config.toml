@@ -89,7 +89,7 @@ copyright = "&copy;2018 Yimin"
 
       [[params.links.list1.link]]
         text = "Blog"
-        url = "/posts"
+        url = "/post/"
 
       [[params.links.list1.link]]
         text = "Streams"
