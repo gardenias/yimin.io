@@ -15,7 +15,7 @@ copyright = "&copy;2018 Yimin"
 [Author] # Used in authorbox
   name = "Yimin"
   bio = "《深度工作》中指出：类似长途商务旅行、会议、回复邮件、参加公关活动等形式的工作，都应当被归纳为“浮浅工作”。"
-  avatar = "img/avatar.png"
+  avatar = "images/avatar.png"
 
 [params]
 
