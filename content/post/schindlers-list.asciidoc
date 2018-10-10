@@ -1,8 +1,8 @@
 ---
-title: "Oskar Schindler And His List"
-description: "Whoever saves one life saves the world entire"
+title: "Oskar Schindler[奥斯卡·辛德勒]"
+description: "\"Whoever saves one life saves the world entire.\""
 date: "2018-10-10T15:50:50+08:00"
-thumbnail: ""
+thumbnail: "https://upload.wikimedia.org/wikipedia/commons/3/38/Schindler%2C_Oskar.jpg"
 categories:
   - "movie"
   - "emotion"
@@ -36,5 +36,6 @@ ____________________________________________________________________
 
 
 - The http://schindlersfactory.com/[__D.E.F__]
+- The http://auschwitz.dk/Schindlerslist.htm[__Schindler's List__]
 - https://en.wikipedia.org/wiki/Oskar_Schindler[Wikipedia **Oskar Schindler**]
 
