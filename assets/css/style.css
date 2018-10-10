@@ -324,6 +324,13 @@ blockquote footer {
 	text-align: right;
 }
 
+.quoteblock {
+	font-style: italic;
+}
+.quoteblock .attribution {
+	text-align: right;
+}
+
 sup,
 sub {
 	font-size: 10px;
