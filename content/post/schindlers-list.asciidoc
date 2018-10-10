@@ -2,13 +2,14 @@
 title: "Oskar Schindler[奥斯卡·辛德勒]"
 description: "\"Whoever saves one life saves the world entire.\""
 date: "2018-10-10T15:50:50+08:00"
-thumbnail: "https://upload.wikimedia.org/wikipedia/commons/3/38/Schindler%2C_Oskar.jpg"
 categories:
   - "movie"
   - "emotion"
 tags:
   - "movie"
 ---
+
+image::https://upload.wikimedia.org/wikipedia/commons/3/38/Schindler%2C_Oskar.jpg[Oskar Schindler[奥斯卡·辛德勒],330,505,align="center"]
 
 [quote, Writer Herbert Steinhouse, who interviewed him in 1948]
 ____________________________________________________________________
