@@ -6,6 +6,9 @@
 			{{- with .Params.lead }}
 			<p class="post__lead">{{ . }}</p>
 			{{- end }}
+			{{ with .Description }}
+			<h5>{{ . }}</h5>
+			{{ end }}
 			{{- if or (not .Date.IsZero) .Params.categories }}<div class="post__meta meta">{{ partial "post_meta.html" . }}</div>{{ end }}
 		</header>
 		{{- if .Params.thumbnail }}
