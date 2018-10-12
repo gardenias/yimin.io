@@ -1,0 +1,10 @@
+---
+title: "Agenda"
+date: 2018-10-12T20:01:05+08:00
+draft: true
+menu: main
+---
+
+## Write
+
+- [ ] 深入理解log函数
