@@ -1,0 +1,18 @@
+---
+title: "Wikipedia"
+date: 2018-10-11T16:24:14+08:00
+menu: main
+---
+
+## A
+
+- https://en.wikipedia.org/wiki/Anti-pattern[Anti-pattern] - is a common response to a recurring problem that is usually ineffective and risks being highly counterproductive.
+
+## C
+
+- https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type[CRDT] - Conflict-free replicated data type.
+
+## D
+
+- https://en.wikipedia.org/wiki/Double-checked_locking[Double-checked locking] - used to reduce the overhead of acquiring a lock by first testing the locking criterion without actually acquiring the lock
+
