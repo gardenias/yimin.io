@@ -1,0 +1,43 @@
+---
+title: "OpenHFT/Chronicle-Map Replication"
+date: 2018-10-11T16:35:47+08:00
+tags:
+  - tech
+  - java
+categories:
+  - tech
+---
+
+## Preparation
+
+- link:/post/tech/openhft-chronicle-map/[OpenHFT/Chronicle-Map]
+
+## Key points
+
+- Enterprise Edition feature
+- It's TCP/IP Replication
+- **TCP/IP Throttling** - only broadcasts the latest update of each entry
+
+## How Chronicle Map Replication works
+
+1. Refer to an instance of a remote map as a node. Each node [red]`can be connected to up to 128 other nodes.`
+1. each remote map mirrors its changes over to another remote map.
+1. Neither map is considered to be the master store of data.
+1. Each map [red]`uses timestamps to reconcile changes`, When the timestamps are the same, the remote node with the smaller identifier will be preferred.
+
+## Multiple Processes on the same server with Replication
+
+- **exchange data via shared memory** - rather than by TCP or UDP replication.
+- **Only one instance is set up TCP or UDP replicated** - if the TCP replicated Chronicle Map instance received an update from a remote node, then this update would be immediately available to all the instances of Chronicle Map on the server
+
+## Identifier for Replication
+
+- **must have their identifiers set** - if you wish to replicate data between two or more server. otherwise all of the Chronicle Map instances not actively participating in TCP or UDP replication.
+- **identifier must be unique to each server** - 
+** Each ChronicleMap on the same server must have the same identifier.
+** Chronicle Map replication ignores updates which have originated from itself.
+
+## Replication event logging
+
+- can be configured to log all replication events to a Chronicle Queue for auditing purposes.
+- Currently, a map can be configured to log all outgoing events that it sends to remote peers.

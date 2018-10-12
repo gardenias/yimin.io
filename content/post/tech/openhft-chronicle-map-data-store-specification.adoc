@@ -1,0 +1,57 @@
+---
+title: "Openhft Chronicle Map Data Store Specification"
+date: 2018-10-11T17:10:23+08:00
+tags:
+  - tech
+  - java
+categories:
+  - tech
+---
+
+## Preparation
+
+- link:/post/tech/openhft-chronicle-map/[OpenHFT/Chronicle-Map]
+- link:/post/tech/openhft-chronicle-map-replication/[OpenHFT/Chronicle-Map Replication]
+
+## Design Overview
+
+- **Each Chronicle Map is split into N completely independent, ordered segments**
+** the number of segments is chosen during the Chronicle Map creation and is never changed.
+** each segment has an associated 3-level lock (the read, update and write levels).
+
+- **Query Flow**
+1. Compute the hash code of the queried key. Hash code length is 64 bits.
+1. Identify the segment that should hold the key, based on the hash code.
+1. Acquire the segment lock on the needed level.
+1. Search for the entry with the queried key in the segment.
+1. Perform the actual query operation on the entry, if the entry is found (e. g. read the value, update the value, etc.), or insert the entry, if the queried key was absent in the segment, and insertion of a previously absent entry is implied by the logic of the query being performed.
+1. Release the segment lock.
+
+## Lock implementation
+
+Each lock is represented by two 32-bit words in the Chronicle Map memory
+
+- `__Count word__:` holds the numbers of threads holding the lock at the moment on the read, update and write levels.
+- `__Wait word__:` holds the number of pending threads, trying to acquire the lock on the write level, at the moment.
+- These two words are updated only via compare-and-swap operations.
+
+https://github.com/OpenHFT/Chronicle-Map/blob/master/spec/3_2-lock-structure.md[read more information]
+
+## The segment data structure
+
+- **Segment tier**
+A segment tier basically consists of two parts:
+** **Hash lookup**
+** **entry space**
+
+- **Tier chaining**
+
+If a segment tier is filled up, i. e. on some entry insertion request entry space fails to allocate a memory block sufficient to place the new entry, a whole new segment tier is allocated and chained after the previous tier. All tiers, either first in their segments or chained, are identical.
+
+## Initialization
+
+https://github.com/OpenHFT/Chronicle-Map/blob/master/spec/5-initialization.md[read more information]
+
+## Query Operations
+
+https://github.com/OpenHFT/Chronicle-Map/blob/master/spec/6-queries.md[read more information]
