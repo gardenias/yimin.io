@@ -16,3 +16,6 @@ menu: main
 
 - https://en.wikipedia.org/wiki/Double-checked_locking[Double-checked locking] - used to reduce the overhead of acquiring a lock by first testing the locking criterion without actually acquiring the lock
 
+## M
+
+- https://en.wikipedia.org/wiki/Memoization[Memoization] - In computing, memoization or memoisation is an optimization technique used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again.
