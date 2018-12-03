@@ -10,7 +10,7 @@ googleAnalytics = ""
 paginate = "12"
 # sectionPagesMenu = "main"
 # Copyright
-copyright = "&copy;2018 Yimin"
+copyright = "&copy;2018 yim"
 
 [menu]
   [[menu.main]]
@@ -19,7 +19,7 @@ copyright = "&copy;2018 Yimin"
     url = "/post/"
 
 [Author] # Used in authorbox
-  name = "yimin"
+  name = "yim"
   bio = "Ordinary steps can also take a great trip."
   avatar = "favicon.ico"
 
@@ -78,7 +78,7 @@ copyright = "&copy;2018 Yimin"
       #gitlab = "username"
       #email = "example@example.com"
       #google_plus = "profileid"
-      
+
   # Links
   #
   # Links List #1
