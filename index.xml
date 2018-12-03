@@ -1,5 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yimin, Wu on 栀子花</title><link>https://yimin.io/</link><description>Recent content in Yimin, Wu on 栀子花</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><copyright>&amp;copy;2018 Yimin</copyright><lastBuildDate>Fri, 28 Sep 2018 18:40:04 +0800</lastBuildDate><atom:link href="https://yimin.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Agenda</title><link>https://yimin.io/agenda/</link><pubDate>Fri, 12 Oct 2018 20:01:05 +0800</pubDate><guid>https://yimin.io/agenda/</guid><description>Write &amp;#10063; 深入理解 log 函数
-&amp;#10063; 2018-10-13 北京动物园见闻
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yimin, Wu on 栀子花</title><link>https://yimin.io/</link><description>Recent content in Yimin, Wu on 栀子花</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><copyright>&amp;copy;2018 Yimin</copyright><lastBuildDate>Fri, 28 Sep 2018 18:40:04 +0800</lastBuildDate><atom:link href="https://yimin.io/index.xml" rel="self" type="application/rss+xml"/><item><title>北京动物园事件 - 2018/10/13</title><link>https://yimin.io/post/life/one-thing-beijing-zoom-20181013/</link><pubDate>Mon, 03 Dec 2018 10:15:22 +0800</pubDate><guid>https://yimin.io/post/life/one-thing-beijing-zoom-20181013/</guid><description> 动物饲养员们四处奔走， 忙着阻止各种拿着食物喂动物的男人、女人、孩子和老人。
+一个中年妇女被制止了，手里拿着自己的胡萝卜看着已经走开的管理员对我说：这都是好东西，我在家专门洗了还刮了皮。
+一个男孩对向他举着食物想让他自己喂一下某种羊的母亲说：我不想喂他，因为他不一定想吃。
+我路上也顺带跟几个想要喂动物的人说：不要喂了，动物们都有专门固定的喂养。第二次之后就被随行的人奉劝不要管那么多。
+只记事，不评论
+&amp;#8212; 栀子花 - 哇</description></item><item><title>Agenda</title><link>https://yimin.io/agenda/</link><pubDate>Fri, 12 Oct 2018 20:01:05 +0800</pubDate><guid>https://yimin.io/agenda/</guid><description>Write &amp;#10063; 深入理解 log 函数
+&amp;#10003; 2018-10-13 北京动物园见闻
 &amp;#10063; LMAX Disruptor research</description></item><item><title>Openhft Chronicle Map Data Store Specification</title><link>https://yimin.io/post/tech/openhft-chronicle-map-data-store-specification/</link><pubDate>Thu, 11 Oct 2018 17:10:23 +0800</pubDate><guid>https://yimin.io/post/tech/openhft-chronicle-map-data-store-specification/</guid><description>Preparation OpenHFT/Chronicle-Map
 OpenHFT/Chronicle-Map Replication
 Design Overview Each Chronicle Map is split into N completely independent, ordered segments
