@@ -1,0 +1,7 @@
+[[tech_disruptor]]
+
+= LMAX Disruptor
+
+== Pages
+1. https://mechanitis.blogspot.com/2011/06/dissecting-disruptor-whats-so-special.html[Dissecting the Disruptor: What's so special about a ring buffer?]
+2. https://github.com/LMAX-Exchange/disruptor/wiki/Blogs-And-Articles[Blogs And Articles]

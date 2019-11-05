@@ -18,3 +18,25 @@ menu: main
 * [ ] Google Guava
 * [ ] Spring
 
+== Read Later
+* [ ] https://dev.mysql.com/doc/refman/5.5/en/innodb-locking.html[14.10.1 InnoDB Locking]
+* [ ] https://dev.mysql.com/doc/refman/5.5/en/sql-syntax-transactions.html[13.3 Transactional and Locking Statements]
+* [ ] https://dev.mysql.com/doc/refman/5.5/en/replication-features-transactions.html[17.4.1.34 Replication and Transactions]
+* [ ] https://github.com/code4craft/netty-learning[code4craft/netty-learning]
+** https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651012135&idx=2&sn=6e0856460f3f0a543f7fda4b958c82a4&chksm=bdbec4748ac94d6219cc84f22d062a2c1b73773c981110094f2d6524e40358ce93fc4256671d&scene=27#wechat_redirect[Netty学习和进阶策略]
+** https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=208985729&idx=1&sn=3860c283ea494c381f8c4adffc191c91&scene=27#wechat_redirect[Netty案例集锦系列文章介绍]
+** https://www.infoq.cn/article/olLlvGFx*Kr0UV9K7tez[Netty 防止内存泄漏措施]
+** https://mp.weixin.qq.com/s?__biz=MzI4MTY5NTk4Ng==&mid=2247489615&idx=1&sn=20ed4f5f1d2c442a6834fe65a5e969d2&chksm=eba41bd2dcd392c48130f08433b1b99ee76085d20d1d353a2deebbe5016d9c67c0d9641fe911&scene=27#wechat_redirect[一篇文章，读懂Netty的高性能架构之道]
+** https://mp.weixin.qq.com/s?__biz=MzI3NzE0NjcwMg==&mid=2650122442&idx=1&sn=23a3782032c35db297b492f07c10ba49&chksm=f36bb5ebc41c3cfd603b79c5d26a05feaa66141ca0dad3f0e8516e6b5cd9402c669c3fa3677a&scene=27#wechat_redirect
+** https://mp.weixin.qq.com/s?__biz=MzI1OTUzMTQyMA==&mid=2247483746&idx=1&sn=b338353a11420c02c5d4077b37db5610&chksm=ea763691dd01bf87671a27d60d9165a3c1092104bc5390efede0e33868b59141226ba648a0d7&scene=27#wechat_redirect[netty源码分析之揭开reactor线程的面纱（三）]
+** https://mp.weixin.qq.com/s?__biz=MzI1OTUzMTQyMA==&mid=2247483704&idx=1&sn=0ee2a5cb55cedfda7c9b10f923130bdc&chksm=ea7636cbdd01bfdd8e0c8c8899fb9f2a193395ce22f8dcfc6965d98898f07dd1fd34968c2ffb&scene=27#wechat_redirect[netty源码分析之揭开reactor线程的面纱（一）
+]
+** https://mp.weixin.qq.com/s?__biz=MzUzMTA2NTU2Ng==&mid=2247485224&idx=2&sn=510b6f2de976b80f4f2c65988338620a&chksm=fa497899cd3ef18f7d61eafcf372c61412ca8dda121c650370cafcd707054703a59e63dc7e7b&scene=27#wechat_redirect[为什么建议 Netty 的 I/O 线程与业务线程分离]
+** https://mp.weixin.qq.com/s?__biz=MzI4MTY5NTk4Ng==&mid=2247489210&idx=1&sn=2da295eb3778151c8359557c0614fb5a&chksm=eba41527dcd39c3161bccec50e8f58b8f8ff84f9e2b6160758d1e8a986ea3033ef8bc8e9b657&scene=27#wechat_redirect[京东的Netty实践，京麦TCP网关长连接容器架构]
+* [ ] http://www.malhar.net/sriram/kilim/[What is Kilim?]
+
+== Tiny  and beautiful softwares
+* https://ixeau.com/keystroke-pro/[Keystroke Pro] - Keypress Visualizer
+
+
+

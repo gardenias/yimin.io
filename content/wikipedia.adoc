@@ -19,3 +19,8 @@ menu: main
 ## M
 
 - https://en.wikipedia.org/wiki/Memoization[Memoization] - In computing, memoization or memoisation is an optimization technique used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again.
+
+## W
+
+- https://en.wikipedia.org/wiki/Monkey_testing[Monkey testing] - In software testing, monkey testing is a technique where the user tests the application or system by providing random inputs and checking the behavior, or seeing whether the application or system will crash. Monkey testing is usually implemented as random, automated unit tests.
+- https://en.wikipedia.org/wiki/Financial_Information_eXchange[FIX] - The Financial Information eXchange (FIX) protocol is an electronic communications protocol initiated in 1992 for international real-time exchange of information related to securities transactions and markets.
